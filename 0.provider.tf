@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("/root/terraform-lab1-408906-758ff302bdb.json")
+  credentials = file("/root/.json")
   project     = var.project
   region      = var.region
   #  location = var.location
