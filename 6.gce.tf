@@ -34,7 +34,8 @@ resource "google_compute_instance" "vm" {
 
   metadata_startup_script = <<-SCRIPT
     #!/bin/bash
-    echo "Hello, this is your startup script!"
+    sudo apt update
+    sudo apt install nginx
     # Additional commands or configurations go here
   # Update package lists
   #sudo apt update
